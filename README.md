@@ -21,4 +21,5 @@ generate  rswag:specs:install
       create  config/initializers/rswag_ui.rb
        route  mount Rswag::Ui::Engine => '/api-docs'
 
+rake rswag:specs:swaggerize
 
