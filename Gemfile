@@ -13,3 +13,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
 
+gem 'unicorn', '~> 6.1.0'
+gem 'pg', '~> 1.3.5'
+gem 'sidekiq', '~> 6.4.2'
+gem 'redis-rails', '~> 5.0.2'
