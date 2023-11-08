@@ -24,6 +24,8 @@ generate  rswag:specs:install
 rake rswag:specs:swaggerize
 
 
+----------------------------------------------------------------
+
 The basic Dockerfile commands are:
 
 FROM: defines what image to start from. We’ll use the official Ruby image as a starting point.
@@ -33,3 +35,6 @@ ENV: defines environment variables.
 WORKDIR: changes the current directory inside the container.
 USER: changes the active user inside the container.
 CMD: defines the program to run when the container starts.
+
+
+docker build -t rails-toolbox -f Dockerfile.rails .
