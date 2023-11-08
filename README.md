@@ -23,3 +23,13 @@ generate  rswag:specs:install
 
 rake rswag:specs:swaggerize
 
+
+The basic Dockerfile commands are:
+
+FROM: defines what image to start from. We’ll use the official Ruby image as a starting point.
+ARG: specifies build-time argument variables. If your workstation is running Linux, the user and group ids should match between the host and the docker container.
+RUN: executes commands inside the container. In the example, we use it to create a user and group and then to install the Rails gems.
+ENV: defines environment variables.
+WORKDIR: changes the current directory inside the container.
+USER: changes the active user inside the container.
+CMD: defines the program to run when the container starts.
